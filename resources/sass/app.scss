@@ -6,3 +6,30 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+.task-row {
+    cursor: pointer;
+
+    &.expired {
+        cursor: not-allowed;
+
+        td {
+            text-decoration: line-through;
+            color: $danger;
+        }
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        td{
+            background-color: $gray-200 ;
+        }
+    }
+
+    &.ready{
+        td{
+            color: $success ;
+        }
+    }
+}

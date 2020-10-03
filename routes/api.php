@@ -17,10 +17,3 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::group([],function (){
-    Route::apiResources([
-        'todoList' => \App\Http\Controllers\API\TodoListControler::class,
-        'todoList.task'=> \App\Http\Controllers\API\TaskController::class
-    ]);
-});

@@ -4,7 +4,10 @@
 
 <script>
 export default {
-    name: "single-page-app"
+    name: "single-page-app",
+    mounted(){
+        this.$store.dispatch('todoLists/all')
+    }
 }
 </script>
 
