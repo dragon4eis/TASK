@@ -19,13 +19,54 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TodoListControler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/TodoList.php" afterDir="false" />
+    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="added models, requests and controllers">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_084337_assign_todo_list_to_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/pages/TodoListPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/routes/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/routes/modules/todolist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c53a6bcb-0c9c-4f2b-93ae-0267d11f1b91.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c53a6bcb-0c9c-4f2b-93ae-0267d11f1b91.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c53a6bcb-0c9c-4f2b-93ae-0267d11f1b91/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c53a6bcb-0c9c-4f2b-93ae-0267d11f1b91/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/TodoList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/TodoList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +81,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
@@ -156,30 +205,50 @@
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iHgZlUqI8as5jWMWHqwPO9NAWW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -193,8 +262,17 @@
       <workItem from="1601574480763" duration="6529000" />
       <workItem from="1601581791912" duration="151000" />
       <workItem from="1601650327206" duration="625000" />
-      <workItem from="1601653650015" duration="6470000" />
+      <workItem from="1601653650015" duration="6645000" />
+      <workItem from="1601705139057" duration="9053000" />
     </task>
+    <task id="LOCAL-00001" summary="added models, requests and controllers">
+      <created>1601667034787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601667034787</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +290,16 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added models, requests and controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added models, requests and controllers" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="756" y="270" key="#CLI_Interpreters" timestamp="1601706566351">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="756" y="270" key="#CLI_Interpreters/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601706566351" />
     <state x="772" y="253" key="#Plugins" timestamp="1601657900409">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -221,33 +308,57 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601576566616" />
-    <state x="1007" y="395" key="FileChooserDialogImpl" timestamp="1601581745000">
+    <state x="1006" y="470" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1601706586243">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1007" y="395" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601581745000" />
-    <state width="2505" height="386" key="GridCell.Tab.0.bottom" timestamp="1601573812105">
+    <state x="1006" y="470" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601706586243" />
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601707529957">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601573812105" />
-    <state width="2505" height="386" key="GridCell.Tab.0.center" timestamp="1601573812105">
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601707529957" />
+    <state x="1007" y="395" key="FileChooserDialogImpl" timestamp="1601706584624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601573812105" />
-    <state width="2505" height="386" key="GridCell.Tab.0.left" timestamp="1601573812105">
+    <state x="1007" y="395" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601706584624" />
+    <state width="2505" height="386" key="GridCell.Tab.0.bottom" timestamp="1601714497529">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601573812105" />
-    <state width="2505" height="386" key="GridCell.Tab.0.right" timestamp="1601573812105">
+    <state width="2505" height="386" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601714497529" />
+    <state width="2505" height="386" key="GridCell.Tab.0.center" timestamp="1601714497529">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601573812105" />
+    <state width="2505" height="386" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601714497529" />
+    <state width="2505" height="386" key="GridCell.Tab.0.left" timestamp="1601714497529">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="386" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601714497529" />
+    <state width="2505" height="386" key="GridCell.Tab.0.right" timestamp="1601714497529">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="386" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601714497529" />
+    <state x="671" y="258" key="SettingsEditor" timestamp="1601707428522">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="671" y="258" key="SettingsEditor/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601707428522" />
+    <state x="772" y="367" key="Vcs.Push.Dialog.v2" timestamp="1601666926884">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="772" y="367" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601666926884" />
+    <state x="-2586" y="83" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601707383214">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2586" y="83" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601707383214" />
+    <state x="925" y="368" width="710" height="664" key="find.popup" timestamp="1601712584130">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="925" y="368" width="710" height="664" key="find.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601712584130" />
     <state x="92" y="92" width="2376" height="1216" key="git4idea.log.GitShowExternalLogAction" timestamp="1601581770092">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="git4idea.log.GitShowExternalLogAction/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601581770092" />
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1601658211546">
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1601713306886">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601658211546" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601713306886" />
   </component>
 </project>

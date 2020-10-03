@@ -1408,7 +1408,7 @@ true posix/WET
 false posix/Zulu
 true posixrules
 </TimeZones>
-      <StartupTime>1601574346</StartupTime>
+      <StartupTime>1601705077</StartupTime>
     </root>
     <database id="2" parent="1" name="homestead">
       <ObjectId>16385</ObjectId>
@@ -1418,7 +1418,7 @@ true posixrules
       <ObjectId>13461</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>507</IntrospectionStateNumber>
+      <IntrospectionStateNumber>522</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|16386|16388|1
 sequence|table|16394|16396|1
@@ -1481,7 +1481,7 @@ sequence|table|16456|16458|1
       <Comment>standard public schema</Comment>
       <StateNumber>275</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>508</IntrospectionStateNumber>
+      <IntrospectionStateNumber>523</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="17" parent="3" name="heap">
@@ -1604,12 +1604,12 @@ sequence|table|16456|16458|1
     <table id="38" parent="16" name="todo_lists">
       <ObjectId>16430</ObjectId>
       <Owner>homestead</Owner>
-      <StateNumber>505</StateNumber>
+      <StateNumber>520</StateNumber>
     </table>
     <table id="39" parent="16" name="users">
       <ObjectId>16396</ObjectId>
       <Owner>homestead</Owner>
-      <StateNumber>491</StateNumber>
+      <StateNumber>520</StateNumber>
     </table>
     <column id="40" parent="34" name="id">
       <Position>1</Position>
@@ -1857,21 +1857,39 @@ sequence|table|16456|16458|1
       <StateNumber>499</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="75" parent="38" name="todo_lists_pkey">
+    <column id="75" parent="38" name="user_id">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>520</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="76" parent="38" name="todo_lists_pkey">
       <ObjectId>16434</ObjectId>
       <StateNumber>499</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="76" parent="38" name="todo_lists_pkey">
+    <key id="77" parent="38" name="todo_lists_pkey">
       <ObjectId>16435</ObjectId>
       <StateNumber>499</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>todo_lists_pkey</UnderlyingIndexName>
     </key>
-    <column id="77" parent="39" name="id">
+    <foreign-key id="78" parent="38" name="todo_lists_user_id_foreign">
+      <ObjectId>24578</ObjectId>
+      <StateNumber>520</StateNumber>
+      <ColNames>user_id</ColNames>
+      <RefTableId>16396</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="79" parent="39" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -1879,72 +1897,72 @@ sequence|table|16456|16458|1
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="78" parent="39" name="name">
+    <column id="80" parent="39" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>491</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="79" parent="39" name="email">
+    <column id="81" parent="39" name="email">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>491</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="80" parent="39" name="email_verified_at">
+    <column id="82" parent="39" name="email_verified_at">
       <Position>4</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>491</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="81" parent="39" name="password">
+    <column id="83" parent="39" name="password">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>491</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="82" parent="39" name="remember_token">
+    <column id="84" parent="39" name="remember_token">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
       <StateNumber>491</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="83" parent="39" name="created_at">
+    <column id="85" parent="39" name="created_at">
       <Position>7</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>491</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="84" parent="39" name="updated_at">
+    <column id="86" parent="39" name="updated_at">
       <Position>8</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>491</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="85" parent="39" name="users_pkey">
+    <index id="87" parent="39" name="users_pkey">
       <ObjectId>16403</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="86" parent="39" name="users_email_unique">
+    <index id="88" parent="39" name="users_email_unique">
       <ObjectId>16405</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="87" parent="39" name="users_pkey">
+    <key id="89" parent="39" name="users_pkey">
       <ObjectId>16404</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
-    <key id="88" parent="39" name="users_email_unique">
+    <key id="90" parent="39" name="users_email_unique">
       <ObjectId>16406</ObjectId>
       <StateNumber>491</StateNumber>
       <ColNames>email</ColNames>
