@@ -26,7 +26,7 @@ class TaskFactory extends Factory
             'title' => $this->faker->monthName,
             'disabled' => $disabled,
             'ready' => $disabled ? false : $this->faker->boolean,
-            'deadline' => date('Y-m-d', rand(strtotime('2020-09-30'), strtotime('2020-10-08')))
+            'deadline' => date('Y-m-d', rand(strtotime('2020-10-01'), strtotime('2020-10-30')))
         ];
     }
 }
