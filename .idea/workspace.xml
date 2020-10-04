@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Unit/TodoListTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,7 +230,7 @@
       <workItem from="1601650327206" duration="625000" />
       <workItem from="1601653650015" duration="6645000" />
       <workItem from="1601705139057" duration="39677000" />
-      <workItem from="1601788580578" duration="29703000" />
+      <workItem from="1601788580578" duration="29956000" />
     </task>
     <task id="LOCAL-00001" summary="added models, requests and controllers">
       <created>1601667034787</created>
@@ -271,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601816969602</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added basic tests">
+      <created>1601822933075</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601822933075</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +298,8 @@
     <MESSAGE value="init main UI components for later user" />
     <MESSAGE value="added some of the main vue components; controllers' methods" />
     <MESSAGE value="finishes main UI components" />
-    <option name="LAST_COMMIT_MESSAGE" value="finishes main UI components" />
+    <MESSAGE value="added basic tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added basic tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="756" y="270" key="#CLI_Interpreters" timestamp="1601706566351">
@@ -322,38 +326,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="944" y="395" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601803293637" />
-    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601816969267">
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601822932664">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601816969267" />
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822932664" />
     <state x="1007" y="395" key="FileChooserDialogImpl" timestamp="1601706584624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1007" y="395" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601706584624" />
-    <state width="2505" height="386" key="GridCell.Tab.0.bottom" timestamp="1601822603211">
+    <state width="2505" height="386" key="GridCell.Tab.0.bottom" timestamp="1601822787753">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822603211" />
-    <state width="2505" height="386" key="GridCell.Tab.0.center" timestamp="1601822603211">
+    <state width="2505" height="386" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822787753" />
+    <state width="2505" height="386" key="GridCell.Tab.0.center" timestamp="1601822787753">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822603211" />
-    <state width="2505" height="386" key="GridCell.Tab.0.left" timestamp="1601822603211">
+    <state width="2505" height="386" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822787753" />
+    <state width="2505" height="386" key="GridCell.Tab.0.left" timestamp="1601822787753">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822603211" />
-    <state width="2505" height="386" key="GridCell.Tab.0.right" timestamp="1601822603211">
+    <state width="2505" height="386" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822787753" />
+    <state width="2505" height="386" key="GridCell.Tab.0.right" timestamp="1601822787753">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822603211" />
+    <state width="2505" height="386" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822787753" />
     <state x="671" y="258" key="SettingsEditor" timestamp="1601813981216">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="671" y="258" key="SettingsEditor/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601813981216" />
-    <state x="772" y="367" key="Vcs.Push.Dialog.v2" timestamp="1601816843389">
+    <state x="772" y="367" key="Vcs.Push.Dialog.v2" timestamp="1601822916393">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="772" y="367" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601816843389" />
+    <state x="772" y="367" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822916393" />
     <state x="-2586" y="83" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601707383214">
       <screen x="-2560" y="0" width="2560" height="1400" />
     </state>
