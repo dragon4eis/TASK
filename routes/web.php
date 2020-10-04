@@ -22,9 +22,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth'])->group(function () {
-    Route::apiResources([
-        'todoList' => \App\Http\Controllers\API\TodoListController::class,
-        'todoList.task' => \App\Http\Controllers\API\TaskController::class
-    ]);
+    Route::apiResource('todoList' , \App\Http\Controllers\API\TodoListController::class);
+    Route::apiResource('todoList.task', \App\Http\Controllers\API\TaskController::class)->only('update');
 });
 

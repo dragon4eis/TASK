@@ -6,10 +6,10 @@
         <td v-text="status"></td>
         <td>
             <div class="btn-group btn-group-sm" v-if="!expired">
-                <button class="btn btn-secondary"  v-text="disableLabel"></button>
+                <button class="btn btn-secondary"  v-text="disableLabel" @click="$emit('disabled', !task.disabled)"></button>
                 <template v-if="!task.disabled">
-                    <button class="btn btn-success" v-if="!task.ready">Ready</button>
-                    <button class="btn btn-danger" v-else>Reopen</button>
+                    <button class="btn btn-success" v-if="!task.ready" @click="$emit('ready', true)">Ready</button>
+                    <button class="btn btn-danger" v-else @click="$emit('ready', false)">Reopen</button>
                 </template>
             </div>
 
@@ -32,7 +32,7 @@ export default {
     },
     computed: {
         expired() {
-            return this.task.expired || moment().isAfter(moment(this.task.deadline))
+            return moment().isAfter(moment(this.task.deadline))
         },
         status() {
             if (this.task.ready) {

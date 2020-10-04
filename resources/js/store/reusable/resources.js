@@ -22,7 +22,7 @@ export default function (urlAddress) {
             updateExistingResource(state, resource){
                 state.all.forEach((original, index) => {
                     if (resource.id === original.id) {
-                        Vue.set(state.all, index, JSON.parse(JSON.stringify({...resource, ...original})))
+                        Vue.set(state.all, index, resource)
                     }
                 })
             }

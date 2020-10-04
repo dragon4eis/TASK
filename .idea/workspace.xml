@@ -19,41 +19,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="added models, requests and controllers">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TodoListController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/TaskResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/TodoListResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Policies/TaskPolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Policies/TodoListPolicy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/TaskFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/TodoListFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_084337_assign_todo_list_to_users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/TodoListSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/ListPreview.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/TaskTable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/rows/TaskRow.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/modules/todoLists.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/reusable/errors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/reusable/resources.js" afterDir="false" />
+    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/element-ui/packages/theme-chalk/src/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/element-ui/packages/theme-chalk/src/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/DeleteTodoList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/TodoListCreatePanel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/TodoListEditPanel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/forms/TodoListForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/CreateTaskListTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/rows/CreateTaskRow.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TodoListControler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TodoListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TodoListController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TaskRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TodoListRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TodoListRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TaskResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TaskResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TodoListResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TodoListResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/TodoList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/TodoList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/TaskPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/TaskPolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/layouts/ListPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/layouts/ListPreview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/layouts/tables/TaskTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/TaskTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/layouts/tables/rows/TaskRow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/rows/TaskRow.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/pages/TodoListPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/TodoListPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/modules/todolist.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/modules/todoLists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes/modules/todoLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/modules/todoLists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/todoLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/todoLists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/reusable/resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/reusable/resources.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +208,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.watch">
@@ -262,7 +256,8 @@
       <workItem from="1601581791912" duration="151000" />
       <workItem from="1601650327206" duration="625000" />
       <workItem from="1601653650015" duration="6645000" />
-      <workItem from="1601705139057" duration="39410000" />
+      <workItem from="1601705139057" duration="39677000" />
+      <workItem from="1601788580578" duration="24329000" />
     </task>
     <task id="LOCAL-00001" summary="added models, requests and controllers">
       <created>1601667034787</created>
@@ -278,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601715165197</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added some of the main vue components; controllers' methods">
+      <created>1601747535828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601747535828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +302,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added models, requests and controllers" />
     <MESSAGE value="init main UI components for later user" />
-    <option name="LAST_COMMIT_MESSAGE" value="init main UI components for later user" />
+    <MESSAGE value="added some of the main vue components; controllers' methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some of the main vue components; controllers' methods" />
   </component>
   <component name="WindowStateProjectService">
     <state x="756" y="270" key="#CLI_Interpreters" timestamp="1601706566351">
@@ -323,38 +326,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="790" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601732672837" />
-    <state x="944" y="395" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601726693721">
+    <state x="944" y="395" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601803293637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="944" y="395" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601726693721" />
-    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601740725650">
+    <state x="944" y="395" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601803293637" />
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601747534971">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601740725650" />
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601747534971" />
     <state x="1007" y="395" key="FileChooserDialogImpl" timestamp="1601706584624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1007" y="395" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601706584624" />
-    <state width="2505" height="386" key="GridCell.Tab.0.bottom" timestamp="1601742864796">
+    <state width="2505" height="386" key="GridCell.Tab.0.bottom" timestamp="1601815919268">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601742864796" />
-    <state width="2505" height="386" key="GridCell.Tab.0.center" timestamp="1601742864796">
+    <state width="2505" height="386" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815919268" />
+    <state width="2505" height="386" key="GridCell.Tab.0.center" timestamp="1601815919268">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601742864796" />
-    <state width="2505" height="386" key="GridCell.Tab.0.left" timestamp="1601742864796">
+    <state width="2505" height="386" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815919268" />
+    <state width="2505" height="386" key="GridCell.Tab.0.left" timestamp="1601815919268">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601742864796" />
-    <state width="2505" height="386" key="GridCell.Tab.0.right" timestamp="1601742864796">
+    <state width="2505" height="386" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815919268" />
+    <state width="2505" height="386" key="GridCell.Tab.0.right" timestamp="1601815919268">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601742864796" />
-    <state x="671" y="258" key="SettingsEditor" timestamp="1601707428522">
+    <state width="2505" height="386" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815919268" />
+    <state x="671" y="258" key="SettingsEditor" timestamp="1601813981216">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="671" y="258" key="SettingsEditor/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601707428522" />
+    <state x="671" y="258" key="SettingsEditor/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601813981216" />
     <state x="772" y="367" key="Vcs.Push.Dialog.v2" timestamp="1601740714232">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -363,17 +366,18 @@
       <screen x="-2560" y="0" width="2560" height="1400" />
     </state>
     <state x="-2586" y="83" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601707383214" />
-    <state x="925" y="368" width="710" height="664" key="find.popup" timestamp="1601736513950">
+    <state x="925" y="368" width="710" height="664" key="find.popup" timestamp="1601815549644">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="925" y="368" width="710" height="664" key="find.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601736513950" />
+    <state x="925" y="368" width="710" height="664" key="find.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815549644" />
     <state x="92" y="92" width="2376" height="1216" key="git4idea.log.GitShowExternalLogAction" timestamp="1601581770092">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="git4idea.log.GitShowExternalLogAction/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601581770092" />
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1601745486685">
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1601815742262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601745486685" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815742262" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1601788704941" />
   </component>
 </project>

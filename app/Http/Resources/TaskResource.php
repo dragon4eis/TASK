@@ -23,7 +23,7 @@ class TaskResource extends JsonResource
             'ready' => $this->ready,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'expired' => $this->expired()
+//            'expired' => $this->expired()
         ];
     }
 }

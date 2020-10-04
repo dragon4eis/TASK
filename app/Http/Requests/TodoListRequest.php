@@ -13,7 +13,7 @@ class TodoListRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,10 @@ class TodoListRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required|max:255',
+            'tasks' => 'required|array',
+            'tasks.*.title' => 'required|string|max:255',
+            'tasks.*.deadline' => 'required|date'
         ];
     }
 }

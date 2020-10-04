@@ -42,7 +42,9 @@ class TodoListController extends Controller
         $todoList->user_id = Auth::user()->getAuthIdentifier();
         if ($todoList->save()) {
             $todoList->tasks()->createMany($request->get('tasks'));
-            return response()->json(['message' => "$todoList->title was successfully created"], Response::HTTP_CREATED);
+            return response()->json(['message' => "$todoList->title was successfully created", 'resource' => new TodoListResource($todoList)],
+                Response::HTTP_CREATED,
+                ['Location' => route('todoList.show', ['todoList' => $todoList->id])]);
         } else {
             return response()->json(['message' => 'List was not saved'], Response::HTTP_BAD_REQUEST);
         }
@@ -71,10 +73,10 @@ class TodoListController extends Controller
     public function update(TodoListRequest $request, TodoList $todoList)
     {
         $todoList->title = $request->get('title');
+        $todoList->tasks()->delete();
+        $todoList->tasks()->createMany($request->get('tasks'));
         if ($todoList->save()) {
-            $todoList->tasks()->delete();
-            $todoList->tasks()->saveMany($request->get('tasks'));
-            return response()->json(['message' => "$todoList->title was successfully updated"], Response::HTTP_CREATED);
+            return response()->json(['message' => "$todoList->title was successfully updated", 'resource' => new TodoListResource($todoList)], Response::HTTP_OK);
         } else {
             return response()->json(['message' => 'List was not updated'], Response::HTTP_BAD_REQUEST);
         }
@@ -87,7 +89,7 @@ class TodoListController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response
      */
-    public function destroy(TodoListRequest $todoList)
+    public function destroy(TodoList $todoList)
     {
         try {
             if ($todoList->delete()) {

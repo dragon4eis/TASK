@@ -12,6 +12,15 @@ import Vue from 'vue';
 import store from './store/index';
 import router from './routes/index';
 import {toNumber} from './helpers';
+import {
+    DatePicker, Switch,
+} from 'element-ui';
+import lang from 'element-ui/lib/locale/lang/en';
+import locale from 'element-ui/lib/locale';
+import VueNotifications from 'vue-notifications';
+import iziToast from 'izitoast';     // https://github.com/dolce/iziToast
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -30,6 +39,24 @@ import {toNumber} from './helpers';
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
+
+//init element components
+locale.use(lang);
+Vue.use(Switch);
+Vue.use(DatePicker);
+
+function toast({title, message, type, timeout}) {
+    if (type === VueNotifications.types.warn) type = 'warning';
+    return iziToast[type]({title, message, timeout})
+}
+
+Vue.use(VueNotifications, {
+    success: toast,
+    error: toast,
+    info: toast,
+    warn: toast
+});
 
 Vue.filter('prettyTimestamp', function (ts, format = 'YYYY-MM-DD HH:mm:ss') {
     if (typeof ts !== 'number') {
@@ -50,4 +77,34 @@ const app = new Vue({
     el: '#appContainer',
     router,
     store,
+    notifications: {
+        showSuccessMsg: {
+            type: VueNotifications.types.success,
+            title: 'Success',
+            message: 'That\'s the success!'
+        },
+        showInfoMsg: {
+            type: VueNotifications.types.info,
+            title: 'Info',
+            message: 'Here is some info for you'
+        },
+        showWarnMsg: {
+            type: VueNotifications.types.warn,
+            title: 'Warning',
+            message: 'That\'s the kind of warning'
+        },
+        showErrorMsg: {
+            type: VueNotifications.types.error,
+            title: 'Error',
+            message: 'That\'s the error'
+        }
+    },
+    methods: {
+        showNotification(config) {
+            if (config != null) {
+                config.timeout = config.timeout || 3000;
+                toast(config)
+            }
+        }
+    }
 });

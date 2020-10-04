@@ -8,18 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property TodoList list
+ * @property int      id
  * @property string   title
  * @property mixed    deadline
  * @property int      todo_list_id
  * @property boolean  disabled
- * @property boolean  expired
+ * @property boolean  ready
  */
 class Task extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'title', 'deadline'
+        'title', 'deadline', 'ready', 'disabled'
     ];
 
     public function  list()
@@ -27,7 +28,8 @@ class Task extends Model
         return $this->belongsTo(TodoList::class, 'todo_list_id');
     }
 
-    public function expired(){
-        return new Carbon() >= $this->deadline;
+    public function expired()
+    {
+        return new Carbon() > $this->deadline;
     }
 }

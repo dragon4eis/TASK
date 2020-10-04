@@ -14,10 +14,11 @@ class TodoListResource extends JsonResource
      */
     public function toArray($request)
     {
+        $tasks = TaskResource::collection($this->tasks);
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'tasks' => $tasks = TaskResource::collection($this->tasks),
+            'tasks' => $tasks->sortBy('id')->toArray(),
             'ready' => count($this->tasks) === $tasks->where('ready', true)->count(),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,

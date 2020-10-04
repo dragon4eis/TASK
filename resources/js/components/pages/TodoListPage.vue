@@ -1,10 +1,13 @@
 <template>
     <div class="row justify-content-center">
-        <div class="col-md-3">
+        <div class="col-md-3  mb-1">
             <div class="card">
                 <div class="card-header">
                     <h3 class="d-inline">Lists</h3>
-                    <button class="btn btn-success float-right">New</button>
+                    <router-link tag="button"
+                                 class="btn btn-success float-right"
+                                 :to="{name: 'todo-create'}"> NEW
+                    </router-link>
                 </div>
                 <div class="">
                     <ul class="list-group list-group-flush">
@@ -16,6 +19,7 @@
                             :to="{name:'todo-select', params:{todo_list_id: list.id}}"
                             class="list-group-item">
                                 <div v-text="list.title" class="d-inline"></div>
+                                <span class="badge badge-success float-right" v-if="list.ready">Ready</span>
                         </router-link>
                     </ul>
                 </div>
