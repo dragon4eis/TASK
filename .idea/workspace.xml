@@ -19,37 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/element-ui/packages/theme-chalk/src/element-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/element-ui/packages/theme-chalk/src/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/DeleteTodoList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/TodoListCreatePanel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/TodoListEditPanel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/forms/TodoListForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/CreateTaskListTable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/rows/CreateTaskRow.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TodoListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TodoListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TaskRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TodoListRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TodoListRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TaskResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TaskResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TodoListResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TodoListResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/TaskPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/TaskPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/layouts/ListPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/layouts/ListPreview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/layouts/tables/TaskTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/TaskTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/layouts/tables/rows/TaskRow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/layouts/tables/rows/TaskRow.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/pages/TodoListPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/pages/TodoListPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/modules/todoLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/modules/todoLists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/todoLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/todoLists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/reusable/resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/reusable/resources.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,7 +227,7 @@
       <workItem from="1601650327206" duration="625000" />
       <workItem from="1601653650015" duration="6645000" />
       <workItem from="1601705139057" duration="39677000" />
-      <workItem from="1601788580578" duration="24329000" />
+      <workItem from="1601788580578" duration="24658000" />
     </task>
     <task id="LOCAL-00001" summary="added models, requests and controllers">
       <created>1601667034787</created>
@@ -280,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601747535828</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finishes main UI components">
+      <created>1601816816937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601816816937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +280,8 @@
     <MESSAGE value="added models, requests and controllers" />
     <MESSAGE value="init main UI components for later user" />
     <MESSAGE value="added some of the main vue components; controllers' methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some of the main vue components; controllers' methods" />
+    <MESSAGE value="finishes main UI components" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishes main UI components" />
   </component>
   <component name="WindowStateProjectService">
     <state x="756" y="270" key="#CLI_Interpreters" timestamp="1601706566351">
@@ -330,10 +308,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="944" y="395" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601803293637" />
-    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601747534971">
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601816816110">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601747534971" />
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601816816110" />
     <state x="1007" y="395" key="FileChooserDialogImpl" timestamp="1601706584624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -358,14 +336,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="671" y="258" key="SettingsEditor/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601813981216" />
-    <state x="772" y="367" key="Vcs.Push.Dialog.v2" timestamp="1601740714232">
+    <state x="772" y="367" key="Vcs.Push.Dialog.v2" timestamp="1601816843389">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="772" y="367" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601740714232" />
+    <state x="772" y="367" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601816843389" />
     <state x="-2586" y="83" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601707383214">
       <screen x="-2560" y="0" width="2560" height="1400" />
     </state>
     <state x="-2586" y="83" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601707383214" />
+    <state x="1057" y="594" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601816958742">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1057" y="594" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601816958742" />
     <state x="925" y="368" width="710" height="664" key="find.popup" timestamp="1601815549644">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
