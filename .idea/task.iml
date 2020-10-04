@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/tests/Unit" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests/Feature" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/public/css" />
       <excludeFolder url="file://$MODULE_DIR$/public/js" />
       <excludeFolder url="file://$MODULE_DIR$/storage/framework/cache/data/5f" />
