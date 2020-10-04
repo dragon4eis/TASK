@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="" />
+    <list default="true" id="b5a458f9-9f46-4dce-8e25-253fde71c184" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/Unit/TodoListTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,35 +185,38 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.watch">
+  <component name="RunManager" selected="PHPUnit.TodoListTest">
+    <configuration name="TodoListTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\TodoListTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/TodoListTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoListTest.test_create_request_validation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\TodoListTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/TodoListTest.php" method="test_create_request_validation" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoListTest.test_delete_list" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\TodoListTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/TodoListTest.php" method="test_delete_list" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoListTest.test_show_list" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\TodoListTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/TodoListTest.php" method="test_show_list" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoListTest.test_update_list" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\TodoListTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/TodoListTest.php" method="test_update_list" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.watch" />
-        <item itemvalue="npm.dev" />
+        <item itemvalue="PHPUnit.TodoListTest" />
+        <item itemvalue="PHPUnit.TodoListTest.test_delete_list" />
+        <item itemvalue="PHPUnit.TodoListTest.test_update_list" />
+        <item itemvalue="PHPUnit.TodoListTest.test_show_list" />
+        <item itemvalue="PHPUnit.TodoListTest.test_create_request_validation" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +234,7 @@
       <workItem from="1601650327206" duration="625000" />
       <workItem from="1601653650015" duration="6645000" />
       <workItem from="1601705139057" duration="39677000" />
-      <workItem from="1601788580578" duration="24658000" />
+      <workItem from="1601788580578" duration="29703000" />
     </task>
     <task id="LOCAL-00001" summary="added models, requests and controllers">
       <created>1601667034787</created>
@@ -257,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601816816937</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finishes main UI components">
+      <created>1601816969602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601816969602</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,30 +322,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="944" y="395" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601803293637" />
-    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601816816110">
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2" timestamp="1601816969267">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601816816110" />
+    <state x="339" y="122" width="1788" height="1017" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601816969267" />
     <state x="1007" y="395" key="FileChooserDialogImpl" timestamp="1601706584624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1007" y="395" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601706584624" />
-    <state width="2505" height="386" key="GridCell.Tab.0.bottom" timestamp="1601815919268">
+    <state width="2505" height="386" key="GridCell.Tab.0.bottom" timestamp="1601822603211">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815919268" />
-    <state width="2505" height="386" key="GridCell.Tab.0.center" timestamp="1601815919268">
+    <state width="2505" height="386" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822603211" />
+    <state width="2505" height="386" key="GridCell.Tab.0.center" timestamp="1601822603211">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815919268" />
-    <state width="2505" height="386" key="GridCell.Tab.0.left" timestamp="1601815919268">
+    <state width="2505" height="386" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822603211" />
+    <state width="2505" height="386" key="GridCell.Tab.0.left" timestamp="1601822603211">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815919268" />
-    <state width="2505" height="386" key="GridCell.Tab.0.right" timestamp="1601815919268">
+    <state width="2505" height="386" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822603211" />
+    <state width="2505" height="386" key="GridCell.Tab.0.right" timestamp="1601822603211">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2505" height="386" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815919268" />
+    <state width="2505" height="386" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601822603211" />
     <state x="671" y="258" key="SettingsEditor" timestamp="1601813981216">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -356,10 +370,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="git4idea.log.GitShowExternalLogAction/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601581770092" />
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1601815742262">
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1601820188957">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601815742262" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1601820188957" />
     <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1601788704941" />
   </component>
 </project>
