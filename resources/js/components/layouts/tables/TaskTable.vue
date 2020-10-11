@@ -34,13 +34,51 @@ export default {
     },
     methods:{
         setReadyState(isReady, task_id){
-            this.updateTask({ready: isReady}, task_id)
+            if(isReady){
+                this.finishTask(task_id)
+            } else {
+                this.reopenTask(task_id)
+            }
         },
         setDisabledState(isDisabled, task_id){
-            this.updateTask({disabled: isDisabled}, task_id)
+            if(isDisabled){
+                this.disableTask(task_id)
+            } else {
+                this.enableTask(task_id)
+            }
         },
-        updateTask(task, task_id){
-            axios.put(`todoList/${this.todo_list_id}/task/${task_id}`, task)
+        enableTask(task_id){
+            axios.delete(`disabledTask/${task_id}`)
+                .then((response) => {
+                    this.$store.commit('todoLists/updateExistingResource', response.data.parent);
+                })
+                .catch(error => {
+                    console.error(error);
+                    this.$root.showErrorMsg(error.response.data)
+                })
+        },
+        disableTask(task_id){
+            axios.post('disabledTask', {'task_id': task_id})
+                .then((response) => {
+                    this.$store.commit('todoLists/updateExistingResource', response.data.parent);
+                })
+                .catch(error => {
+                    console.error(error);
+                    this.$root.showErrorMsg(error.response.data)
+                })
+        },
+        finishTask(task_id){
+            axios.post('readyTask', {'task_id': task_id})
+                .then((response) => {
+                    this.$store.commit('todoLists/updateExistingResource', response.data.parent);
+                })
+                .catch(error => {
+                    console.error(error);
+                    this.$root.showErrorMsg(error.response.data)
+                })
+        },
+        reopenTask(task_id){
+            axios.delete(`readyTask/${task_id}`)
                 .then((response) => {
                     this.$store.commit('todoLists/updateExistingResource', response.data.parent);
                 })

@@ -23,6 +23,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware(['auth'])->group(function () {
     Route::apiResource('todoList' , \App\Http\Controllers\API\TodoListController::class);
-    Route::apiResource('todoList.task', \App\Http\Controllers\API\TaskController::class)->only('update');
+
+    Route::post('disabledTask', [\App\Http\Controllers\API\DisabledTaskController::class, 'store'])->name('task.disable');
+    Route::delete('disabledTask/{id}', [\App\Http\Controllers\API\DisabledTaskController::class, 'destroy'])->name('task.enable');
+
+    Route::post('readyTask', [\App\Http\Controllers\API\ReadyTaskController::class, 'store'])->name('task.ready');
+    Route::delete('readyTask/{id}', [\App\Http\Controllers\API\ReadyTaskController::class, 'destroy'])->name('task.open');
 });
 

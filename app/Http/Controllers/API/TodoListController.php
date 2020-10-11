@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\TodoListRequest;
 use App\Http\Resources\TodoListResource;
 use App\Models\TodoList;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
@@ -13,19 +14,21 @@ use Illuminate\Support\Facades\Log;
 
 class TodoListController extends Controller
 {
-    public function __construct()
+    protected $todoList;
+    public function __construct(TodoList  $list)
     {
         $this->authorizeResource(TodoList::class, 'todoList');
+        $this->todoList = $list;
     }
 
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     * @return \Illuminate\Http\Resources\Json\JsonResource
      */
     public function index()
     {
-        return TodoListResource::collection(Auth::user()->todoLists);
+        return TodoListResource::collection($this->todoList->list());
     }
 
     /**
@@ -37,11 +40,7 @@ class TodoListController extends Controller
      */
     public function store(TodoListRequest $request)
     {
-        $todoList = new TodoList();
-        $todoList->title = $request->get('title');
-        $todoList->user_id = Auth::user()->getAuthIdentifier();
-        if ($todoList->save()) {
-            $todoList->tasks()->createMany($request->get('tasks'));
+        if ($todoList = $this->todoList->makeNew($request->all())) {
             return response()->json(['message' => "$todoList->title was successfully created", 'resource' => new TodoListResource($todoList)],
                 Response::HTTP_CREATED,
                 ['Location' => route('todoList.show', ['todoList' => $todoList->id])]);
@@ -72,10 +71,7 @@ class TodoListController extends Controller
      */
     public function update(TodoListRequest $request, TodoList $todoList)
     {
-        $todoList->title = $request->get('title');
-        $todoList->tasks()->delete();
-        $todoList->tasks()->createMany($request->get('tasks'));
-        if ($todoList->save()) {
+        if ($todoList = $this->todoList->change($request->all(), $todoList)) {
             return response()->json(['message' => "$todoList->title was successfully updated", 'resource' => new TodoListResource($todoList)], Response::HTTP_OK);
         } else {
             return response()->json(['message' => 'List was not updated'], Response::HTTP_BAD_REQUEST);
@@ -92,7 +88,7 @@ class TodoListController extends Controller
     public function destroy(TodoList $todoList)
     {
         try {
-            if ($todoList->delete()) {
+            if ($this->todoList->remove($todoList)) {
                 return response()->json(['message' => "$todoList->title was successfully removed"], Response::HTTP_OK);
             } else {
                 return response()->json(['message' => 'List was not removed'], Response::HTTP_BAD_REQUEST);

@@ -32,4 +32,20 @@ class Task extends Model
     {
         return new Carbon() > $this->deadline;
     }
+
+    public function enable(){
+       return $this->update(['disabled' => false]);
+    }
+
+    public function disable(){
+        return $this->update(['disabled' => true]);
+    }
+
+    public function finish(){
+        return  $this->update(['ready' => true]);
+    }
+
+    public function restart(){
+        return  $this->update(['ready' => false]);
+    }
 }
