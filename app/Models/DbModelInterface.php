@@ -5,7 +5,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Http\Resources\Json\JsonResource;
 
 interface DbModelInterface
 {
@@ -32,7 +31,7 @@ interface DbModelInterface
      *
      * @return Model
      */
-    function read(int $id): Model;
+    function read(int $id): ?Model;
 
     /**
      * Update resource
@@ -48,9 +47,9 @@ interface DbModelInterface
     /**
      * Remove resource from database
      *
-     * @param Model $model
+     * @param array $ids
      *
      * @return bool
      */
-    function remove(Model $model): bool;
+    function remove(array $ids): bool;
 }

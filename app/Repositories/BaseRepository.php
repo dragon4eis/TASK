@@ -4,10 +4,8 @@
 namespace App\Repositories;
 
 
-use App\Models\TodoList;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Auth;
 
 class BaseRepository implements BaseRepositoryInterface
 {
@@ -20,35 +18,28 @@ class BaseRepository implements BaseRepositoryInterface
 
     function list(): Collection
     {
-        return Auth::user()->todoLists;
+        return $this->model->all();
     }
 
     function makeNew(array $fields): Model
     {
-        $list = TodoList::create([
-            'title' => $fields['title'],
-            'user_id' => Auth::user()->getAuthIdentifier(),
-        ]);
-        $list->tasks()->createMany($fields['tasks']);
-        return $list->refresh();
+        return $this->model->create($fields);
 
     }
 
-    function read(int $id): Model
+    function read(int $id): ?Model
     {
-        return TodoList::findOrFail($id);
+        return $this->model->findOrFail($id);
     }
 
     function change(array $fields, $model): Model
     {
-        $model->update($fields);
-        $model->tasks()->delete();
-        $model->tasks()->createMany($fields['tasks']);
+        $this->model->update($fields);
         return $model;
     }
 
-    function remove($model): bool
+    function remove(array $ids): bool
     {
-        return $model->delete();
+        return $this->model->destroy($ids);
     }
 }
