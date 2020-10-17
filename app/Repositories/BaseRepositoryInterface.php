@@ -4,7 +4,9 @@
 namespace App\Repositories;
 
 
-interface BaseRepositoryInterface
+use App\Models\DbModelInterface;
+
+interface BaseRepositoryInterface extends DbModelInterface
 {
 
 }

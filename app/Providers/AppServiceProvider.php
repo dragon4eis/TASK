@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Interfaces\TaskControl;
+use App\Services\TaskControl;
 use App\Services\TaskControlService;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\ServiceProvider;
