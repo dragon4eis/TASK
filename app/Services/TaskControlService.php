@@ -10,7 +10,7 @@ use App\Models\Task;
  * Class TaskControlService
  * @package App\Services
  */
-class TaskControlService implements TaskControl
+final class TaskControlService implements TaskControl
 {
 
     public function enableTask(int $task_id): bool{

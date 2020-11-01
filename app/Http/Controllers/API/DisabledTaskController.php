@@ -10,7 +10,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class DisabledTaskController extends Controller
+final class DisabledTaskController extends Controller
 {
     protected $taskControl;
 

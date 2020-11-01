@@ -10,10 +10,10 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ReadyTaskController extends Controller
+final class ReadyTaskController extends Controller
 {
 
-    protected $taskControl;
+    protected TaskControl $taskControl;
 
     public function __construct(TaskControl $service)
     {

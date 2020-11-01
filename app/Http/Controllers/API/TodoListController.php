@@ -7,6 +7,7 @@ use App\Http\Requests\TodoListRequest;
 use App\Http\Resources\TodoListResource;
 use App\Models\TodoList;
 use App\Repositories\TodoListRepository;
+use App\Repositories\TodoListRepositoryInterface;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -15,11 +16,11 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
 
-class TodoListController extends Controller
+final class TodoListController extends Controller
 {
-    protected TodoListRepository $listRepository;
+    protected TodoListRepositoryInterface $listRepository;
 
-    public function __construct(TodoListRepository $repository)
+    public function __construct(TodoListRepositoryInterface $repository)
     {
         $this->authorizeResource(TodoList::class, 'todoList');
 

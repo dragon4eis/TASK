@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
-class TodoListRepository extends BaseRepository implements BaseRepositoryInterface
+final class TodoListRepository extends BaseRepository implements BaseRepositoryInterface
 {
     public function __construct(TodoList $model)
     {
